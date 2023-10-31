@@ -1,0 +1,203 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\input{glyphtounicode}
+
+\pdfgentounicode=1
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeI}[2]{
+  \item\small{
+    {#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+%----------HEADING-----------------
+% Define the headline section
+\begin{center}
+    {\LARGE \textbf{XXXXXXXX}}\\
+    \vspace{0.1cm}
+    \href{mailto:XXXXXXX}{\textit{XXXXXXX@gmail.com}}| (xxx) xxx-xxxx | \href{https://www.linkedin.com/in/xxxxx/}{LinkedIn: xxxxx} | \href{https://github.com/xxxxx}{GitHub: xxxxx} | XLocationX
+\end{center}
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+        {The Shelby Company Limited}{Remote, NY}
+    {Cloud Software Developer Intern}{ Jun 2022 - Dec 2022}
+
+    \resumeItemListStart
+            \resumeI{Spearheaded a team of three to enhance an insurance web application used by 20,000+ agents, focusing on improving the onboarding process and boosting agent productivity by 50\%}
+
+            \resumeI{Engineered 20+ RESTful APIs using Java Spring Boot, resulting in reduction of onboarding time from 25 to just 13 minutes, enhancing operational efficiency and user satisfaction}
+            
+           \resumeI{Steered the Agile SDLC, advancing 5+ services through analysis, design, implementation, testing phases}
+           
+           \resumeI{Implemented a caching strategy with PostgreSQL and Spring, improving backend API latency by 20\% during peak traffic}
+           
+           \resumeI{Spearheaded POC initiatives for scaling and transitioning to a microservices setup, aiming to increase system resilience by 40\% and accelerate feature rollout by 20\%}
+
+    \resumeItemListEnd
+    
+    \resumeSubheading
+        {The Shelby Company Limited}{Bangalore, India}
+    {Senior Software Engineer (Youngest member to be promoted to Senior Software engineer)}{Jan 2018 - Jun 2021}
+
+		\resumeItemListStart
+                   \resumeI{Designed and implemented a multi-tenant anomaly detection framework serving 100+ tenants, streamlining the detection of faulty devices and saving over 1000+ man-hours monthly through automation}
+          
+          \resumeI{Achieved 95\% accuracy in malfunction detection by processing approximately 100GB of data daily, utilizing ETL pipelines and PySpark to handle around 100 million records}
+          
+          \resumeI{Established a robust data warehousing process, integrating aggregated data from S3 into a PostgreSQL database, and automated customer escalation/response system, saving 500+ man-hours monthly}
+          
+          \resumeI{Enhanced operational efficiency by 10\% by developing web application to monitor 10+ KPIs across all product lines}
+
+          \resumeI{Optimized data visibility and reduced operational overhead by 20\% through collaboration with the DevOps team by deploying ELK cluster on IoT logs}
+
+		\resumeItemListEnd
+   
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubItem{WikiPulse (Tech: React, Kafka, Java Spring Boot, PostgreSQL)(May '23)}
+\resumeSubheading
+        \resumeItemListStart
+        \resumeI{Developed WikiPulse to track and visualize over 1,000 daily Wikipedia edits in real-time, utilizing Spring Boot, Kafka, and React to display live edits across 10+ categories on a local dashboard}
+       
+        \resumeI{Designed middleware components, resulting in a 15\% codebase reduction, and coupled Spring Boot with WebSockets for sub-3-second latency in real-time data display}
+        \resumeItemListEnd
+
+\resumeSubItem{Swift Cart (Tech: AWS, Terraform, Packer, Node.js, Express.js)(May '23)}
+\resumeSubheading
+        \resumeItemListStart
+           \resumeI{Engineered an e-commerce website using Node.js and Express.js, and orchestrated  infrastructure on AWS (including EC2, RDS, Route53, Load Balancer, and auto-scaling) using Terraform and Packer}
+          
+          \resumeI{Established a CI/CD pipeline using GitHub Actions, reducing deployment time by 50\%, and enhanced security through KMS keys and security groups, managing and updating 3+ domain names seamlessly}
+		\resumeItemListEnd
+
+\resumeSubItem{MediPlan Manager (Tech: Spring Boot, Oauth2.0, Redis, ELK, RabbitMQ)(May '23)}
+\resumeSubheading
+        \resumeItemListStart
+        \resumeI{Developed "MediPlan Manager", a medical plan management application, integrating Spring Boot REST API, Redis Cache, and RabbitMQ, enhancing system performance and data flow}
+        
+        \resumeI{Boosted the application's responsiveness by 50\% through HTTP caching with eTAGs and Redis Cache, and utilized the ELK Stack to enhance full-text search capabilities, securing the system with JWT Auth Tokens}
+        \resumeItemListEnd
+        
+\vspace{2pt}
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Programming \& Scripting}{Python, Java, JavaScript, TypeScript, Shell Scripting}
+	\resumeSubItem{Web \& Backend Development}{Bootstrap, AngularJS, React.js, FastAPI, Node.js, Express.js, Spring Boot, Spring MVC}
+	\resumeSubItem{Big Data \& Database Management}{Apache Kafka, Apache Spark, RabbitMQ, Hadoop, Airflow, PostgreSQL, MySQL, Cassandra, MongoDB, Oracle, Redis}
+	\resumeSubItem{DevOps, CI/CD \& Version Control}{Docker, Kubernetes, Jenkins, Github Actions, Terraform, Packer, Git, Jira, Maven}
+	\resumeSubItem{Monitoring, Logging \& QA Tools}{Datadog, ELK Stack, AWS CloudWatch, Jest, Testcontainers, Sonar, Junit, Mockito}
+	\resumeSubItem{Certifications \& Software Tools}{AWS Developer Associate, MS Excel, Tableau, Prometheus, MySQL Workbench}
+	\resumeSubHeadingListEnd
+
+
+
+%-----------EDUCATION-----------------
+\vspace{-5pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northeastern University - College of Engineering}{Boston, MA}
+      {Master of Science in Information Systems}{Aug 2023}
+    
+    \vspace{-1pt}
+    \resumeSubheading
+      {Manipal Institute of Technology}{Manipal, India}
+      {Bachelor of Technology in Information Technology}{Jun 2018}
+  \resumeSubHeadingListEnd
+
+\end{document}
+
